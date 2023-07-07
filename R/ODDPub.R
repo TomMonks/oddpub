@@ -64,7 +64,7 @@ pdf_load <- function(pdf_text_folder)
   txt_filenames <- paste0(pdf_text_folder, txt_filenames)
 
   #produce version of the full texts where all sentences are seperate vector elements
-  PDF_text_sentences <- map(txt_filenames, readr::read_lines) magrittr::%>%
+  PDF_text_sentences <- map(txt_filenames, readr::read_lines) %>%
     map(paste, collapse = " ") %>%
     map(tokenizers::tokenize_sentences, simplify = TRUE) %>%
     map(tolower) %>%
