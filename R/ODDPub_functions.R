@@ -140,7 +140,7 @@
                  "reported in",
                  "uploaded",
                  "are public on",
-                 "contains the complete") %>%
+                 "contains") %>%
     .format_keyword_vector()
   keyword_list[["available"]] <- available
 
