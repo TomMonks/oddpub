@@ -139,7 +139,8 @@
                  "can be downloaded",
                  "reported in",
                  "uploaded",
-                 "are public on") %>%
+                 "are public on",
+                 "contains") %>%
     .format_keyword_vector()
   keyword_list[["available"]] <- available
 
@@ -381,7 +382,8 @@
                    "python script",
                    "python code",
                    "matlab script",
-                   "matlab code") %>%
+                   "matlab code",
+                   "R-code") %>%
     .format_keyword_vector()
   keyword_list[["source_code"]] <- source_code
 
